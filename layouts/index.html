@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+{{ "<!--" | safeHTML}}
+  Stellar by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{{ "-->" | safeHTML }}
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+          {{ .Data.Posts }}
+
+        <!-- Header -->
+          {{ partial "header.html" . }}
+
+        <!-- Nav -->
+          {{ partial "navigation.html" . }}
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- Introduction -->
+              {{ partial "intro.html" . }}
+
+            <!-- Sections -->
+              {{ $list := .Site.Params.section }}
+              {{ range $index, $section := $list }}
+                <section id="{{$section.id}}" class="main special">
+                  <header class="major">
+                    <h2>{{ $section.title }}</h2>
+                    <p>{{ $section.description | markdownify }}</p>
+                  </header>
+                  
+                  <!-- section features -->
+                  {{ if $section.features.enable }}
+                    <ul class="features">
+                      {{ range $count, $feature := $section.feature }}
+                      <li>
+                        {{ if $feature.url }}
+                        <a href="{{ $feature.url }}">
+                        {{end}}
+                          <i class="icon major style{{ add $count 1 }} {{ $feature.icon }}"></i>
+                          <h3>{{ $feature.title }} </h3>
+                          <button>
+                            <i class="fa fa-download"></i>
+                            Download
+                          </button>
+                          <p>{{ $feature.description | markdownify }}</p>
+                        {{ if $feature.url }}
+                        </a>
+                        {{end}}
+                      </li>
+                      {{end}}
+                    </ul>
+                  {{ end }}
+
+                  <!-- section showcase -->
+                  {{ if $section.showcase.enable }}
+                    <ul class="showcase">
+                      {{ range $count, $showcase := $section.image }}
+                        <li class="style{{add $count 1}}">
+                          <span class="image"><img src="{{ $showcase.image }}" alt="{{ $showcase.title }}" title="{{ $showcase.title }}" /></span>
+                          <strong class="caption">{{ $showcase.title }}</strong>
+                          <p class="description">{{ $showcase.description }}</p>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+
+                  <!-- section statistics -->
+                  {{ if $section.statistics.enable }}
+                    <ul class="statistics">
+                      {{ range $count, $stat := $section.statistic }}
+                        <li class="style{{add $count 1}}">
+                          <span class="icon {{ $stat.icon }} "></span>
+                          <strong>{{ $stat.value }}</strong> {{ $stat.text }}
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+                  <!-- section content -->
+                  {{ if $section.content.enable }}
+                    <p class="content">{{ $section.content.text }}</p>
+                  {{ end }}
+                  
+                  <!-- section footer/cta -->
+                  {{ if $section.footer.enable }}
+                    <footer class="major">
+                      <ul class="actions">
+                        {{range $button := $section.footer.action }}
+                          <li>
+                            <a href="{{ $button.buttonUrl }}" class="button {{ $button.customClass }}">
+                              {{ if $button.icon }}
+                                <i class="{{ $button.icon }}"></i>&nbsp;
+                              {{ end }}
+                              {{ $button.buttontext }}
+                            </a>
+                          </li>
+                        {{ end }}
+                      </ul>
+                    </footer>
+                  {{end}}
+                </section>
+              {{ end }}
+          
+          </div>
+
+        <!-- Footer -->
+          {{ partial "footer.html" . }}
+
+      </div>
+
+    <!-- Scripts -->
+      {{ partial "scripts.html" . }}
+      {{- partial "footer_custom.html" . }}
+  </body>
+</html>

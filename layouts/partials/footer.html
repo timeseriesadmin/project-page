@@ -1,0 +1,52 @@
+<footer id="footer">
+  <section>
+    <h2>{{ .Site.Params.footer.title }}</h2>
+    <p>{{ .Site.Params.footer.description | markdownify }}</p>
+    <ul class="actions">
+      {{range $button := .Site.Params.footer.action }}
+        <li>
+          <a href="{{ $button.href }}" class="button {{ $button.customClass }}">
+            {{ if $button.icon }}
+              <i class="{{ $button.icon }}"></i>&nbsp;
+            {{ end }}
+            {{ $button.buttontext }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+  </section>
+  <section>
+    <h2>{{ .Site.Params.footer.second_title }}</h2>
+    <p>{{ .Site.Params.footer.second_description | markdownify }}</p>
+    {{ if .Site.Params.footer.show_contact }}
+    <dl class="alt">
+      {{ with .Site.Params.footer.address }}
+        <dt>Address</dt>
+        <dd>{{ . | markdownify }}</dd>
+      {{ end }}
+      {{ with .Site.Params.footer.phone }}
+        <dt>Phone</dt>
+        <dd>{{ . | markdownify }}</dd>
+      {{ end }}
+      <dt>Email</dt>
+      <dd><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email | markdownify }}</a></dd>
+    </dl>
+    {{ end }}
+  
+    {{ if .Site.Params.footer.social_list.enable }}
+      <ul class="icons">
+        {{ range .Site.Params.footer.social }}
+          <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+  
+  {{ if .Site.Params.footer.copyright.enable }}
+    <p class="copyright">
+      Theme based on <a href="https://github.com/antonpolishko/hugo-stellar-theme">Hugo Stellar</a> and <a href="https://html5up.net">HTML5UP Stellar theme</a>, modified by <a href="https://www.grzegorowski.com">Jan Grzegorowski</a>
+    </p>      
+  {{ end }}
+
+</footer>

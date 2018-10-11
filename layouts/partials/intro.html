@@ -1,0 +1,13 @@
+<section id="overview" class="main">
+  <div class="content">
+    <header class="major">
+      <h2>{{ .Site.Params.intro.title }}</h2>
+    </header>
+
+    {{ if .Site.Params.intro.image }}
+      <span class="image"><img src="{{ .Site.Params.intro.image }}" alt="" /></span>
+    {{ end }}
+
+    <p style="text-align: center">{{ .Site.Params.intro.description | markdownify }}</p>
+  </div>
+</section>

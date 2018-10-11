@@ -1,3 +1,183 @@
-baseURL = "http://example.org/"
+baseURL = "https://influx-explorer.github.io"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Influx Explorer"
+description = "Administration panel and data explorer interface for InfluxDB databases"
+theme = "stellar"
+
+[author]
+  name = "Jan Grzegorowski"
+  homepage = "https://grzegorowski.com"
+
+[params]
+  [params.header]
+    title = "Influx Explorer"
+    description = "Administration panel and data explorer interface for InfluxDB databases"
+    image = "images/icon.png"
+
+  [[params.navigation]]
+    name = "Preview"
+    href = "#overview"
+
+  [[params.navigation]]
+    name = "Download"
+    href = "#download"
+
+  [[params.navigation]]
+    name = "Showcase"
+    href = "#showcase"
+
+  [[params.navigation]]
+    name = "License"
+    href = "#license"
+
+  [params.intro]
+    title = "Preview"
+    description = "Influx Explorer Application on Mac OS X"
+    image = "images/influx-explorer.png"
+
+  [[params.section]]
+    id = "download"
+    title = "Download"
+    description = "Download application for your OS"
+    
+    # the picture is storead at static/images/
+    [params.section.features]
+      enable = true
+      [[params.section.feature]]
+        title = "Mac OS X (.dmg)"
+        description = "Tested with Mac OS X 10.13 High Sierra"
+        icon = "fab fa-apple"
+        url = "https://google.com"
+
+      [[params.section.feature]]
+        title = "Linux (.deb)"
+        description = "Tested with Ubuntu 18.04"
+        icon = "fab fa-linux"
+        url = "https://google.com"
+
+      [[params.section.feature]]
+        title = "Windows (.exe)"
+        description = "Tested with Windows 10<br/>(64-bit version)"
+        icon = "fab fa-windows"
+        url = "https://google.com"
+
+      [[params.section.feature]]
+        title = "Docker Image"
+        description = "Tested with Docker 18.06-ce"
+        icon = "fab fa-docker"
+        url = "https://google.com"
+
+    [params.section.content]
+      enable = true
+      text = "Not working with your specific OS version?"
+
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Report an issue"
+        buttonUrl = "https://github.com/influx-explorer/issues"
+        icon = "fa fa-exclamation"
+
+  [[params.section]]
+    id = "showcase"
+    title = "Showcase"
+    description = "A short presentation of Influx Explorer application features."
+
+    [params.section.showcase]
+      enable = true
+      [[params.section.image]]
+        image = "images/influx-explorer--browse-results.png"
+        title = "Browse through Influx query results"
+        description = "With interactive results table you can easily browse through query results"
+      [[params.section.image]]
+        image = "images/influx-explorer--time-format.png"
+        title = "Adjust time format"
+        description = "Select desired time format for current query results"
+      #[[params.section.image]]
+        #image = "images/influx-explorer--results-sort.png"
+        #title = "Sort results by whatever column you need"
+        #description = "Client-side sorting may be helpful in some simple data verification tasks"
+      [[params.section.image]]
+        image = "images/influx-explorer--panel-connect.png"
+        title = "Save InfluxDB connection data"
+        description = "With SAVE CONNECTION DATA button you may store your current connection data in CONNECT panel list."
+      [[params.section.image]]
+        image = "images/influx-explorer--panel-explorer.png"
+        title = "Explore InfluxDB server"
+        description = "Go through your InfluxDB structure without writing single InfluxQL query."
+      [[params.section.image]]
+        image = "images/influx-explorer--panel-history.png"
+        title = "Repeat recently run queries"
+        description = "Click on HISTORY list entry to place selected query inside Query textarea. Easily repeat it or refactor before running again."
+      [[params.section.image]]
+        image = "images/influx-explorer--panel-reference.png"
+        title = "Check references without leaving Influx Explorer"
+        description = "Click on selected reference in REFERENCE panel to place it inside Query textarea. Easily refactor query code and run it."
+      [[params.section.image]]
+        image = "images/influx-explorer--hide-panels.png"
+        title = "Make more space for results"
+        description = "You can hide or show utility panels to make space for query results if needed."
+      [[params.section.image]]
+        image = "images/influx-explorer--understand-errors.png"
+        title = "Understand your mistakes"
+        description = "Thanks to the descriptive and interactive error messages"
+      [[params.section.image]]
+        image = "images/influx-explorer--success.png"
+        title = "Verify results of your requests"
+        description = "Simple DROP MEASUREMENT query should return 200: OK, which you may quickly verify."
+      [[params.section.image]]
+        image = "images/influx-explorer--password.png"
+        title = "Check password input value"
+        description = "You can view password as a plain text if necessary."
+      [[params.section.image]]
+        image = "images/influx-explorer--responsive.png"
+        title = "Scale application window to fit your needs"
+        description = "It is responsive, but don't go crazy small or it will become unusable."
+
+    [params.section.content]
+      enable = true
+      text = "If you didn't find a feature you are looking for don't hesitate to ask."
+
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Request a feature"
+        buttonUrl = "https://github.com/influx-explorer/influx-explorer"
+        icon = "fa fa-flag"
+
+  [[params.section]]
+    id = "license"
+    title = "License"
+    description = "It is free to download, share and use.<br/>Application is MIT licensed, so you may modify it however you want, if needed."
+
+
+  [params.footer]
+    enable = true
+    title = "Share your opinion"
+    description = "If you find this application useful please share it with others.<br/>If you like this project go ahead and give it a star."
+
+    second_title = "Influx Explorer"
+    second_description = "Electron based application for InfluxDB querying and administration."
+
+    [[params.footer.action]]
+      href = "https://github.com/influx-explorer/influx-explorer"
+      icon = "fa fa-star"
+      buttontext = "Star it"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Github"
+        icon = "fa-github"
+        link = "https://github.com/influx-explorer/influx-explorer"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:grzegorowski@gmail.com?subject=[Influx Explorer] Question"
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
