@@ -46,8 +46,8 @@
                           <i class="icon major style{{ add $count 1 }} {{ $feature.icon }}"></i>
                           <h3>{{ $feature.title }} </h3>
                           <button>
-                            <i class="fa fa-download"></i>
-                            Download
+                            <i class="{{ $feature.buttonIcon }}"></i>
+                            {{ $feature.buttonLabel }}
                           </button>
                           <p>{{ $feature.description | markdownify }}</p>
                         {{ if $feature.url }}

@@ -48,24 +48,32 @@ theme = "stellar"
         description = "Tested with Mac OS X 10.13 High Sierra"
         icon = "fab fa-apple"
         url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/Influx.Explorer-0.1.0.dmg"
+        buttonIcon = "fa fa-download"
+        buttonLabel = "Download"
 
       [[params.section.feature]]
         title = "Linux (.deb)"
         description = "Tested with Ubuntu 18.04"
         icon = "fab fa-linux"
         url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/influx-explorer_0.1.0_amd64.deb"
+        buttonIcon = "fa fa-download"
+        buttonLabel = "Download"
 
       [[params.section.feature]]
         title = "Windows (.exe)"
         description = "Tested with Windows 10<br/>(64-bit version)"
         icon = "fab fa-windows"
         url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/Influx.Explorer.Setup.0.1.0.exe"
+        buttonIcon = "fa fa-download"
+        buttonLabel = "Download"
 
       [[params.section.feature]]
         title = "Docker Image"
         description = "Tested with Docker 18.06-ce"
         icon = "fab fa-docker"
-        url = "https://google.com"
+        url = "https://hub.docker.com/r/influxexplorer/influx-explorer/"
+        buttonIcon = "fa fa-link"
+        buttonLabel = "Go to Docker Hub"
 
     [params.section.content]
       enable = true
