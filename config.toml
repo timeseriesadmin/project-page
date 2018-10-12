@@ -75,7 +75,7 @@ theme = "stellar"
       enable = true
       [[params.section.footer.action]]
         buttontext = "Report an issue"
-        buttonUrl = "https://github.com/influx-explorer/issues"
+        buttonUrl = "https://github.com/influx-explorer/influx-explorer/issues/new"
         icon = "fa fa-exclamation"
 
   [[params.section]]
@@ -142,7 +142,7 @@ theme = "stellar"
       enable = true
       [[params.section.footer.action]]
         buttontext = "Request a feature"
-        buttonUrl = "https://github.com/influx-explorer/influx-explorer"
+        buttonUrl = "https://github.com/influx-explorer/influx-explorer/issues/new"
         icon = "fa fa-flag"
 
   [[params.section]]
