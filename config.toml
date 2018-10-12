@@ -47,19 +47,19 @@ theme = "stellar"
         title = "Mac OS X (.dmg)"
         description = "Tested with Mac OS X 10.13 High Sierra"
         icon = "fab fa-apple"
-        url = "https://google.com"
+        url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/Influx.Explorer-0.1.0.dmg"
 
       [[params.section.feature]]
         title = "Linux (.deb)"
         description = "Tested with Ubuntu 18.04"
         icon = "fab fa-linux"
-        url = "https://google.com"
+        url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/influx-explorer_0.1.0_amd64.deb"
 
       [[params.section.feature]]
         title = "Windows (.exe)"
         description = "Tested with Windows 10<br/>(64-bit version)"
         icon = "fab fa-windows"
-        url = "https://google.com"
+        url = "https://github.com/influx-explorer/influx-explorer/releases/download/v0.1.0/Influx.Explorer.Setup.0.1.0.exe"
 
       [[params.section.feature]]
         title = "Docker Image"
