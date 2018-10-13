@@ -12,7 +12,7 @@ theme = "stellar"
   [params.header]
     title = "Influx Explorer"
     description = "Administration panel and data explorer interface for InfluxDB databases"
-    image = "images/icon.png"
+    image = "images/icon.svg"
 
   [[params.navigation]]
     name = "Preview"
