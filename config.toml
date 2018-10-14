@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Influx Explorer"
 description = "Administration panel and data explorer interface for InfluxDB databases"
 theme = "stellar"
+googleAnalytics = "" #put your google-analytics ID here
 
 [author]
   name = "Jan Grzegorowski"
@@ -33,7 +34,7 @@ theme = "stellar"
   [params.intro]
     title = "Preview"
     description = "Influx Explorer Application on Mac OS X"
-    image = "images/influx-explorer.png"
+    image = "images-mini/influx-explorer.png"
 
   [[params.section]]
     id = "download"
@@ -94,51 +95,51 @@ theme = "stellar"
     [params.section.showcase]
       enable = true
       [[params.section.image]]
-        image = "images/influx-explorer--browse-results.png"
+        image = "images-mini/influx-explorer--browse-results.png"
         title = "Browse through Influx query results"
         description = "With interactive results table you can easily browse through query results"
       [[params.section.image]]
-        image = "images/influx-explorer--time-format.png"
+        image = "images-mini/influx-explorer--time-format.png"
         title = "Adjust time format"
         description = "Select desired time format for current query results"
       #[[params.section.image]]
-        #image = "images/influx-explorer--results-sort.png"
+        #image = "images-mini/influx-explorer--results-sort.png"
         #title = "Sort results by whatever column you need"
         #description = "Client-side sorting may be helpful in some simple data verification tasks"
       [[params.section.image]]
-        image = "images/influx-explorer--panel-connect.png"
+        image = "images-mini/influx-explorer--panel-connect.png"
         title = "Save InfluxDB connection data"
         description = "With SAVE CONNECTION DATA button you may store your current connection data in CONNECT panel list."
       [[params.section.image]]
-        image = "images/influx-explorer--panel-explorer.png"
+        image = "images-mini/influx-explorer--panel-explorer.png"
         title = "Explore InfluxDB server"
         description = "Go through your InfluxDB structure without writing single InfluxQL query."
       [[params.section.image]]
-        image = "images/influx-explorer--panel-history.png"
+        image = "images-mini/influx-explorer--panel-history.png"
         title = "Repeat recently run queries"
         description = "Click on HISTORY list entry to place selected query inside Query textarea. Easily repeat it or refactor before running again."
       [[params.section.image]]
-        image = "images/influx-explorer--panel-reference.png"
+        image = "images-mini/influx-explorer--panel-reference.png"
         title = "Check references without leaving Influx Explorer"
         description = "Click on selected reference in REFERENCE panel to place it inside Query textarea. Easily refactor query code and run it."
       [[params.section.image]]
-        image = "images/influx-explorer--hide-panels.png"
+        image = "images-mini/influx-explorer--hide-panels.png"
         title = "Make more space for results"
         description = "You can hide or show utility panels to make space for query results if needed."
       [[params.section.image]]
-        image = "images/influx-explorer--understand-errors.png"
+        image = "images-mini/influx-explorer--understand-errors.png"
         title = "Understand your mistakes"
         description = "Thanks to the descriptive and interactive error messages"
       [[params.section.image]]
-        image = "images/influx-explorer--success.png"
+        image = "images-mini/influx-explorer--success.png"
         title = "Verify results of your requests"
         description = "Simple DROP MEASUREMENT query should return 200: OK, which you may quickly verify."
       [[params.section.image]]
-        image = "images/influx-explorer--password.png"
+        image = "images-mini/influx-explorer--password.png"
         title = "Check password input value"
         description = "You can view password as a plain text if necessary."
       [[params.section.image]]
-        image = "images/influx-explorer--responsive.png"
+        image = "images-mini/influx-explorer--responsive.png"
         title = "Scale application window to fit your needs"
         description = "It is responsive, but don't go crazy small or it will become unusable."
 
