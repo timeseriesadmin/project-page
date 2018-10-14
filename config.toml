@@ -10,6 +10,9 @@ googleAnalytics = "UA-98635349-2"
   homepage = "https://grzegorowski.com"
 
 [params]
+  name = "Jan Grzegorowski"
+  description = "Administration panel and data explorer interface for InfluxDB databases"
+
   [params.header]
     title = "Influx Explorer"
     description = "Administration panel and data explorer interface for InfluxDB databases"
