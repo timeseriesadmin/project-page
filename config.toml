@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Influx Explorer"
 description = "Administration panel and data explorer interface for InfluxDB databases"
 theme = "stellar"
-googleAnalytics = "" #put your google-analytics ID here
+googleAnalytics = "UA-98635349-2"
 
 [author]
   name = "Jan Grzegorowski"
