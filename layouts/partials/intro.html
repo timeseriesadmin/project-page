@@ -4,10 +4,14 @@
       <h2>{{ .Site.Params.intro.title }}</h2>
     </header>
 
+    <p>
+      {{ .Site.Params.intro.description | markdownify }}
+    </p>
+
     {{ if .Site.Params.intro.image }}
       <span class="image"><img src="{{ .Site.Params.intro.image }}" alt="" /></span>
     {{ end }}
 
-    <p style="text-align: center">{{ .Site.Params.intro.description | markdownify }}</p>
+    <p style="text-align: center">{{ .Site.Params.intro.caption }}</p>
   </div>
 </section>

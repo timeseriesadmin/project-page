@@ -19,7 +19,7 @@ googleAnalytics = "UA-98635349-2"
     image = "images/icon.svg"
 
   [[params.navigation]]
-    name = "Preview"
+    name = "Overview"
     href = "#overview"
 
   [[params.navigation]]
@@ -35,9 +35,11 @@ googleAnalytics = "UA-98635349-2"
     href = "#license"
 
   [params.intro]
-    title = "Preview"
-    description = "Influx Explorer Application on Mac OS X"
+    title = "Overview"
+    description = "Influx Explorer is a tool built primarily for developers and administrators who needs simple user interface for interacting with InfluxDB databases. A general knowledge about InfluxQL is required to use Influx Explorer properly, but for those who just want to browse through the structure of database there is Explorer panel. One of the most useful features in everyday work is the query history panel which remembers last 30 queries. Influx Explorer is build as an alternative to Chronograf and deprecated Influx Admin UI.<br/><br/>Go ahead and browse through the [Showcase](/#showcase) section to find out more."
     image = "images-mini/influx-explorer.png"
+    caption = "Influx Explorer Application on Mac OS X"
+
 
   [[params.section]]
     id = "download"
