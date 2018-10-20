@@ -1,7 +1,7 @@
-Influx Explorer project page
+Time Series Admin project page
 ===
 
-Generates static content for https://github.com/influx-explorer/influx-explorer.github.io repository which in published as Github Pages.
+Generates static content for https://github.com/timeseriesadmin/timeseriesadmin.github.io repository which in published as Github Pages.
 
 ## Deployment
 
