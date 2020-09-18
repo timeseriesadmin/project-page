@@ -1,197 +1,195 @@
 baseURL = "https://timeseriesadmin.github.io/"
-languageCode = "en-us"
-title = "Time Series Admin"
 description = "Administration and querying interface for InfluxDB databases"
-theme = "stellar"
 googleAnalytics = "UA-98635349-3"
+languageCode = "en-us"
+theme = "stellar"
+title = "Time Series Admin"
 
 [author]
-  name = "Jan Grzegorowski"
-  homepage = "https://grzegorowski.com"
+homepage = "https://grzegorowski.com"
+name = "Jan Grzegorowski"
 
 [params]
-  name = "Jan Grzegorowski"
-  description = "Administration and querying interface for InfluxDB databases"
+description = "Administration and querying interface for InfluxDB databases"
+name = "Jan Grzegorowski"
 
-  [params.header]
-    title = "Time Series Admin"
-    description = "Administration and querying interface for InfluxDB databases"
-    image = "images/icon.svg"
+[params.header]
+description = "Administration and querying interface for InfluxDB databases"
+image = "images/icon.svg"
+title = "Time Series Admin"
 
-  [[params.navigation]]
-    name = "Overview"
-    href = "#overview"
+[[params.navigation]]
+href = "#overview"
+name = "Overview"
 
-  [[params.navigation]]
-    name = "Download"
-    href = "#download"
+[[params.navigation]]
+href = "#download"
+name = "Download"
 
-  [[params.navigation]]
-    name = "Showcase"
-    href = "#showcase"
+[[params.navigation]]
+href = "#showcase"
+name = "Showcase"
 
-  [[params.navigation]]
-    name = "License"
-    href = "#license"
+[[params.navigation]]
+href = "#license"
+name = "License"
 
-  [params.intro]
-    title = "Overview"
-    description = "Time Series Admin is a tool built primarily for developers and administrators who need a simple user interface for interacting with InfluxDB databases. A general knowledge about InfluxQL is required to use Time Series Admin properly, but for those who just want to browse through the structure of a database, there is Explorer panel. One of the most useful features in everyday work is the query history panel which remembers last 30 queries. Time Series Admin is built as an alternative to Chronograf and deprecated Influx Admin UI.<br/><br/>Go ahead and browse through the [Showcase](/#showcase) section to find out more."
-    image = "images-mini/timeseriesadmin.png"
-    caption = "Time Series Admin Application on Mac OS X"
+[params.intro]
+caption = "Time Series Admin Application on Mac OS X"
+description = "Time Series Admin is a tool built primarily for developers and administrators who need a simple user interface for interacting with InfluxDB databases. A general knowledge about InfluxQL is required to use Time Series Admin properly, but for those who just want to browse through the structure of a database, there is Explorer panel. One of the most useful features in everyday work is the query history panel which remembers last 30 queries. Time Series Admin is built as an alternative to Chronograf and deprecated Influx Admin UI.<br/><br/>Go ahead and browse through the [Showcase](/#showcase) section to find out more."
+image = "images-mini/timeseriesadmin.png"
+title = "Overview"
 
+[[params.section]]
 
-  [[params.section]]
-    id = "download"
-    title = "Download"
-    description = "Download latest Time Series Admin for your OS"
-    
-    # the picture is storead at static/images/
-    [params.section.features]
-      enable = true
-      [[params.section.feature]]
-        title = "Mac OS X (.dmg)"
-        description = "Tested with Mac OS X 10.13 High Sierra"
-        icon = "fab fa-apple"
-        url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.12/TimeSeriesAdmin.dmg"
-        buttonIcon = "fa fa-download"
-        buttonLabel = "Download"
+description = "Download latest Time Series Admin for your OS"
+id = "download"
+title = "Download"
+# the picture is storead at static/images/
+[params.section.features]
+enable = true
+[[params.section.feature]]
+buttonIcon = "fa fa-download"
+buttonLabel = "Download"
+description = "Tested with Mac OS X 10.13 High Sierra"
+icon = "fab fa-apple"
+title = "Mac OS X (.dmg)"
+url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.13/TimeSeriesAdmin.dmg"
 
-      [[params.section.feature]]
-        title = "Linux (.deb)"
-        description = "Tested with Ubuntu 18.04"
-        icon = "fab fa-linux"
-        url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.12/TimeSeriesAdmin.deb"
-        buttonIcon = "fa fa-download"
-        buttonLabel = "Download"
+[[params.section.feature]]
+buttonIcon = "fa fa-download"
+buttonLabel = "Download"
+description = "Tested with Ubuntu 18.04"
+icon = "fab fa-linux"
+title = "Linux (.deb)"
+url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.13/TimeSeriesAdmin.deb"
 
-      [[params.section.feature]]
-        title = "Windows (.exe)"
-        description = "Tested with Windows 10<br/>(64-bit version)"
-        icon = "fab fa-windows"
-        url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.12/TimeSeriesAdmin.exe"
-        buttonIcon = "fa fa-download"
-        buttonLabel = "Download"
+[[params.section.feature]]
+buttonIcon = "fa fa-download"
+buttonLabel = "Download"
+description = "Tested with Windows 10<br/>(64-bit version)"
+icon = "fab fa-windows"
+title = "Windows (.exe)"
+url = "https://github.com/timeseriesadmin/timeseriesadmin/releases/download/v0.1.13/TimeSeriesAdmin.exe"
 
-      [[params.section.feature]]
-        title = "Docker Image"
-        description = "Tested with Docker 18.06-ce"
-        icon = "fab fa-docker"
-        url = "https://hub.docker.com/r/timeseriesadmin/timeseriesadmin/"
-        buttonIcon = "fa fa-link"
-        buttonLabel = "Go to Docker Hub"
+[[params.section.feature]]
+buttonIcon = "fa fa-link"
+buttonLabel = "Go to Docker Hub"
+description = "Tested with Docker 18.06-ce"
+icon = "fab fa-docker"
+title = "Docker Image"
+url = "https://hub.docker.com/r/timeseriesadmin/timeseriesadmin/"
 
-    [params.section.content]
-      enable = true
-      text = "Not working with your specific OS version?"
+[params.section.content]
+enable = true
+text = "Not working with your specific OS version?"
 
-    [params.section.footer]
-      enable = true
-      [[params.section.footer.action]]
-        buttontext = "Report an issue"
-        buttonUrl = "https://github.com/timeseriesadmin/timeseriesadmin/issues/new"
-        icon = "fa fa-exclamation"
+[params.section.footer]
+enable = true
+[[params.section.footer.action]]
+buttonUrl = "https://github.com/timeseriesadmin/timeseriesadmin/issues/new"
+buttontext = "Report an issue"
+icon = "fa fa-exclamation"
 
-  [[params.section]]
-    id = "showcase"
-    title = "Showcase"
-    description = "A short presentation of Time Series Admin application features."
+[[params.section]]
+description = "A short presentation of Time Series Admin application features."
+id = "showcase"
+title = "Showcase"
 
-    [params.section.showcase]
-      enable = true
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--browse-results.png"
-        title = "Browse through Influx query results"
-        description = "With interactive results table you can easily browse through query results"
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--time-format.png"
-        title = "Adjust time format"
-        description = "Select desired time format for current query results"
-      #[[params.section.image]]
-        #image = "images-mini/timeseriesadmin--results-sort.png"
-        #title = "Sort results by whatever column you need"
-        #description = "Client-side sorting may be helpful in some simple data verification tasks"
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--panel-connect.png"
-        title = "Save InfluxDB connection data"
-        description = "With SAVE CONNECTION DATA button you may store your current connection data in CONNECT panel list."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--panel-explorer.png"
-        title = "Explore InfluxDB server"
-        description = "Go through your InfluxDB structure without writing single InfluxQL query."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--panel-history.png"
-        title = "Repeat recently run queries"
-        description = "Click on HISTORY list entry to place selected query inside Query textarea. Easily repeat it or refactor before running again."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--panel-reference.png"
-        title = "Check references without leaving Time Series Admin"
-        description = "Click on selected reference in REFERENCE panel to place it inside Query textarea. Easily refactor query code and run it."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--hide-panels.png"
-        title = "Make more space for results"
-        description = "You can hide or show utility panels to make space for query results if needed."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--understand-errors.png"
-        title = "Understand your mistakes"
-        description = "Thanks to the descriptive and interactive error messages"
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--success.png"
-        title = "Verify results of your requests"
-        description = "Simple DROP MEASUREMENT query should return 200: OK, which you may quickly verify."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--password.png"
-        title = "Check password input value"
-        description = "You can view password as a plain text if necessary."
-      [[params.section.image]]
-        image = "images-mini/timeseriesadmin--responsive.png"
-        title = "Scale application window to fit your needs"
-        description = "It is responsive, but don't go crazy small or it will become unusable."
+[params.section.showcase]
+enable = true
+[[params.section.image]]
+description = "With interactive results table you can easily browse through query results"
+image = "images-mini/timeseriesadmin--browse-results.png"
+title = "Browse through Influx query results"
+[[params.section.image]]
+description = "Select desired time format for current query results"
+image = "images-mini/timeseriesadmin--time-format.png"
+title = "Adjust time format"
+#[[params.section.image]]
+#image = "images-mini/timeseriesadmin--results-sort.png"
+#title = "Sort results by whatever column you need"
+#description = "Client-side sorting may be helpful in some simple data verification tasks"
+[[params.section.image]]
+description = "With SAVE CONNECTION DATA button you may store your current connection data in CONNECT panel list."
+image = "images-mini/timeseriesadmin--panel-connect.png"
+title = "Save InfluxDB connection data"
+[[params.section.image]]
+description = "Go through your InfluxDB structure without writing single InfluxQL query."
+image = "images-mini/timeseriesadmin--panel-explorer.png"
+title = "Explore InfluxDB server"
+[[params.section.image]]
+description = "Click on HISTORY list entry to place selected query inside Query textarea. Easily repeat it or refactor before running again."
+image = "images-mini/timeseriesadmin--panel-history.png"
+title = "Repeat recently run queries"
+[[params.section.image]]
+description = "Click on selected reference in REFERENCE panel to place it inside Query textarea. Easily refactor query code and run it."
+image = "images-mini/timeseriesadmin--panel-reference.png"
+title = "Check references without leaving Time Series Admin"
+[[params.section.image]]
+description = "You can hide or show utility panels to make space for query results if needed."
+image = "images-mini/timeseriesadmin--hide-panels.png"
+title = "Make more space for results"
+[[params.section.image]]
+description = "Thanks to the descriptive and interactive error messages"
+image = "images-mini/timeseriesadmin--understand-errors.png"
+title = "Understand your mistakes"
+[[params.section.image]]
+description = "Simple DROP MEASUREMENT query should return 200: OK, which you may quickly verify."
+image = "images-mini/timeseriesadmin--success.png"
+title = "Verify results of your requests"
+[[params.section.image]]
+description = "You can view password as a plain text if necessary."
+image = "images-mini/timeseriesadmin--password.png"
+title = "Check password input value"
+[[params.section.image]]
+description = "It is responsive, but don't go crazy small or it will become unusable."
+image = "images-mini/timeseriesadmin--responsive.png"
+title = "Scale application window to fit your needs"
 
-    [params.section.content]
-      enable = true
-      text = "If you didn't find a feature you are looking for don't hesitate to ask."
+[params.section.content]
+enable = true
+text = "If you didn't find a feature you are looking for don't hesitate to ask."
 
-    [params.section.footer]
-      enable = true
-      [[params.section.footer.action]]
-        buttontext = "Request a feature"
-        buttonUrl = "https://github.com/timeseriesadmin/timeseriesadmin/issues/new"
-        icon = "fa fa-flag"
+[params.section.footer]
+enable = true
+[[params.section.footer.action]]
+buttonUrl = "https://github.com/timeseriesadmin/timeseriesadmin/issues/new"
+buttontext = "Request a feature"
+icon = "fa fa-flag"
 
-  [[params.section]]
-    id = "license"
-    title = "License"
-    description = "It is free to download, share and use.<br/>Application is MIT licensed, so you may modify it however you want, if needed."
+[[params.section]]
+description = "It is free to download, share and use.<br/>Application is MIT licensed, so you may modify it however you want, if needed."
+id = "license"
+title = "License"
 
+[params.footer]
+description = "If you find this application useful please share it with others.<br/>If you like this project go ahead and give it a star."
+enable = true
+title = "Share your opinion"
 
-  [params.footer]
-    enable = true
-    title = "Share your opinion"
-    description = "If you find this application useful please share it with others.<br/>If you like this project go ahead and give it a star."
+second_description = "Electron based application for InfluxDB querying and administration."
+second_title = "Time Series Admin"
 
-    second_title = "Time Series Admin"
-    second_description = "Electron based application for InfluxDB querying and administration."
+[[params.footer.action]]
+buttontext = "Star it"
+href = "https://github.com/timeseriesadmin/timeseriesadmin"
+icon = "fa fa-star"
 
-    [[params.footer.action]]
-      href = "https://github.com/timeseriesadmin/timeseriesadmin"
-      icon = "fa fa-star"
-      buttontext = "Star it"
+# social icons
+[params.footer.social_list]
+enable = true
 
-    # social icons
-    [params.footer.social_list]
-      enable = true
+[[params.footer.social]]
+icon = "fa-github"
+link = "https://github.com/timeseriesadmin/timeseriesadmin"
+title = "Github"
 
-      [[params.footer.social]]
-        title = "Github"
-        icon = "fa-github"
-        link = "https://github.com/timeseriesadmin/timeseriesadmin"
+[[params.footer.social]]
+icon = "fa-envelope"
+link = "mailto:grzegorowski@gmail.com?subject=[Time Series Admin] Question"
+title = "Email"
 
-      [[params.footer.social]]
-        title = "Email"
-        icon = "fa-envelope"
-        link = "mailto:grzegorowski@gmail.com?subject=[Time Series Admin] Question"
-
-    # copyright
-    [params.footer.copyright]
-      enable = true
+# copyright
+[params.footer.copyright]
+enable = true
